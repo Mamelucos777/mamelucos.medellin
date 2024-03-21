@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="styles.css">
     
     <style>
+
+           /* Estilos previamente definidos aquí */
+
+        /* Nuevos estilos para diseño responsive */
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product {
+            flex: 0 0 calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
+            margin: 10px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            .product {
+                flex: 0 0 calc(33.33% - 20px); /* Tres productos por fila en pantallas medianas y grandes */
+            }
+        }
         
         .product-gallery {
             display: flex; /* Cambiamos el comportamiento de la caja a flexbox */
@@ -83,6 +103,16 @@
             text-align: center;
             padding: 1em 0;
         }
+
+        /* Estilos para submenús */
+        .submenu {
+            display: none;
+        }
+
+        .submenu.active {
+            display: block;
+        }
+       
     </style>
 </head>
 <img src="ultimo logo.png" alt="Logo de tu negocio"style="width: 200px; height: auto; float: left; margin: top 5px">
@@ -99,7 +129,14 @@
    
     <nav>
         <a href="#inicio">INICIO</a>
-        <a href="#Mamelucos">MAMELUCOS</a>
+        <a href="#" onclick="toggleSubmenu('mamelucosSubmenu')">MAMELUCOS</a>
+        <div id="mamelucosSubmenu" class="submenu">
+            <a href="#MamelucosSorpresa">Mamelucos Sorpresa</a>
+            <a href="#MamelucosMensajes">Mamelucos con Mensajes</a>
+            <a href="#MamelucosFechas">Mamelucos Fechas Especiales</a>
+            <a href="#MamelucosEquipos">Mamelucos Futbol</a>
+            <a href="#MamelucosPersonajes">Mamelucos Personajes</a>
+        </div>
         <a href="#Adhesivos Decorativos">ADHESIVOS DECORATIVOS</a>
         <a href="#Retablos">RETABLOS</a>
         <a href="#Mugs">MUGS</a>
@@ -123,28 +160,28 @@
 
                     <div class="product-gallery">
                         <div class="product">
-                            <img src="m1.jpg" alt="Ref 01">
+                            <img src="s1.jpg" alt="Ref 01">
                             <div class="zoom"></div>
                             <h3>Ref 01</h3>
                             <p></p>
-                            <span>$28.000</span
-                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/m1.jpg&phone=3053576459">Pidelo Aquí</a>
-                           </div>
-                        
+                            <span>$33.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s1.jpg&phone=3053576459">Pidelo Aquí</a>
+                            
+
+                        </div>
                         <div class="product">
-                            <img src="m2.jpg" alt="Ref 02">
+                            <img src="s41.jpg" alt="Ref 02">
                             <h3>Ref 02</h3>
                             <p></p>
                             <span>$28.000</span>
-                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/m2.jpg&phone=3053576459">Pidelo Aquí</a>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s41.jpg&phone=3053576459">Pidelo Aquí</a>
                         </div>
                         <div class="product">
-                            <img src="m3.jpg" alt="Ref 03">
+                            <img src="s3.jpg" alt="Ref 03">
                             <h3>Ref 03</h3>
                             <p></p>
                             <span>$28.000</span>
-                            <a href="whatsapp:3053576459//send?text=Texto%20del%20artículo%20aquí%20-%20https://m3.jpg" target="_blank" class="whatsapp-share-btn">Pidelo Aquí</a>
-                            
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s3.jpg&phone=3053576459">Pidelo Aquí</a>
                         </div>
                         <div class="product">
                             <img src="m4.jpg" alt="Ref 04">
@@ -255,6 +292,13 @@
         <p>&copy; 2024 Mamelucos Medellín. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        function toggleSubmenu(submenuId) {
+            var submenu = document.getElementById(submenuId);
+            submenu.classList.toggle('active');
+        }
+    </script>
 
+ 
 </body>
 </html>
