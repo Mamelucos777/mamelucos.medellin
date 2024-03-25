@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamelucos Medellín</title> 
+    Envios a toda Colombia, Pedidos WhatsApp: <a href="https://wa.me/3053576459">3053576459</a>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+    <style>
+
+
+        .product {
+            flex: 0 0 calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
+            margin: 10px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            .product {
+                flex: 0 0 calc(33.33% - 20px); /* Tres productos por fila en pantallas medianas y grandes */
+            }
+        }
+        
+        .product-gallery {
+            display: flex; /* Cambiamos el comportamiento de la caja a flexbox */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        }
+
+        .product {
+            flex: 0 0 calc(33% - 20px); /* Establecemos el ancho de cada producto (ajustable según tus necesidades) */
+            margin: 10px; /* Añadimos un margen entre los productos */
+            text-align: center; /* Centramos el contenido */
+
+        
+            flex: 0 0 calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
+            margin: 10px;
+            text-align: center;
+        
+
+        @media screen and (min-width: 768px) {
+            .product {
+                flex: 0 0 calc(33.33% - 20px); /* Tres productos por fila en pantallas medianas y grandes */
+            }
+        }
+    }
+        
+
+        .product img {
+            max-width: 100%; /* Hacemos que la imagen ocupe todo el ancho disponible */
+            height: 300px; /* Permitimos que la altura se ajuste automáticamente */
+
+                 /* Estilos previamente definidos aquí */
+
+        /* Nuevos estilos para diseño responsive */
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+          /* Nuevos estilos para hacer las imágenes responsive */
+          .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        }
+
+        .zoom {
+            display: none;
+            position: absolute;
+            width: 200px; /* ajusta el tamaño de la lupa según sea necesario */
+            height: 200px; /* ajusta el tamaño de la lupa según sea necesario */
+            border: 2px solid black;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: 999;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: f4f4f4;
+        }
+
+        header {
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #aeaeb3;
+            color: #ffffff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            font-family: 'Lucida Sans',  sans-serif;
+            font-weight: bold;
+            background-color: #d8e8f5;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: #888585;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Estilos para submenús */
+        .submenu {
+            display: none;
+        }
+
+        .submenu.active {
+            display: block;
+        }
+       
+    </style>
+</head>
+<img src="ultimo logo.png" alt="Logo de tu negocio"style="width: 200px; height: auto; float: left; margin: top 5px">
+
+<body>
+    
+    
+    <header>
+        
+        <h1>Pequeños detalles, grandes recuerdos!</h1>
+        <p></p>
+        
+    </header>
+   
+    <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#" onclick="toggleSubmenu('mamelucosSubmenu')">MAMELUCOS</a>
+        <div id="mamelucosSubmenu" class="submenu">
+            <a href="#MamelucosSorpresa">Mamelucos Sorpresa</a>
+            <a href="#MamelucosMensajes">Mamelucos con Mensajes</a>
+            <a href="#MamelucosFechas">Mamelucos Fechas Especiales</a>
+            <a href="#MamelucosEquipos">Mamelucos Futbol</a>
+            <a href="#MamelucosPersonajes">Mamelucos Personajes</a>
+        </div>
+        <a href="#Adhesivos Decorativos">ADHESIVOS DECORATIVOS</a>
+        <a href="#Retablos">RETABLOS</a>
+        <a href="#Mugs">MUGS</a>
+        <a href="#contacto">CONTACTO</a>
+    </nav>
+
+    <section id="inicio">
+   
+    </section>
+
+    <section id="Mamelucos">
+        <h2>Mamelucos</h2>
+        <p>Nuestros mamelucos están confeccionados con los materiales más suaves
+        y de alta calidad para garantizar la comodidad y el bienestar de tu bebé.
+        Ofrecemos una amplia selección de mamelucos adorables y personalizables 
+        que se adaptan perfectamente a la personalidad de tu pequeño.</p>
+        <h1>Mamelucos Anuncio Bebé</h1>
+        <p>Puedes personalizarlos con el parentezco o nombre que desees.</p>
+        <p>*Costo de envío es por aparte
+            - Medellín, Bello, copacabana: $12.000 COP
+            - Envigado, Itagui, Sabaneta: $ 15.000 COP
+            - Nivel nacional por transportadora: $15.000 COP</p>
+            <p>*Si deseas un mameluco personalizado elige ref 01 y ten en cuenta el costo adicional</p>
+            <p>*Elige Ref 02 si deseas que el mameluco elegido cuente con empaque personalizado para regalar</p>
+
+       
+
+                    <div class="product-gallery">
+                        <div class="product">
+                            <img src="s1.jpg" alt="Ref 01">
+                            <div class="zoom"></div>
+                            <h3>Ref 01</h3>
+                            <p></p>
+                            <span>$33.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s1.jpg&phone=3053576459">Pidelo Aquí</a>
+                            
+
+                        </div>
+                        <div class="product">
+                            <img src="s41.jpg" alt="Ref 02">
+                            <h3>Ref 02</h3>
+                            <p></p>
+                            <span>$38.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s41.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s3.jpg" alt="Ref 03">
+                            <h3>Ref 03</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s3.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s4.jpg" alt="Ref 04">
+                            <h3>Ref 04</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s4.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s5.jpg" alt="Ref 05">
+                            <h3>Ref 05</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s5.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s6.jpg" alt="Ref 06">
+                            <h3>Ref 06</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s6.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s7.jpg" alt="Ref 07">
+                            <h3>Ref 07</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s7.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s8.jpg" alt="Ref 08">
+                            <h3>Ref 08</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s8.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s9.jpg" alt="Ref 09">
+                            <h3>Ref 09</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s9.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s10.jpg" alt="Ref 10">
+                            <h3>Ref 10</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s10.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s11.jpg" alt="Ref 11">
+                            <h3>Ref 11</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s11.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s12.jpg" alt="Ref 12">
+                            <h3>Ref 12</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s12.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s13.jpg" alt="Ref 13">
+                            <h3>Ref 013</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s13.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s14.jpg" alt="Ref 14">
+                            <h3>Ref 14</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s14.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s15.jpg" alt="Ref 15">
+                            <h3>Ref 15</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s15.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s16.jpg" alt="Ref 16">
+                            <h3>Ref 16</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s16.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s17.jpg" alt="Ref 17">
+                            <h3>Ref 17</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s17.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s18.jpg" alt="Ref 18">
+                            <h3>Ref 18</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s18.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s19.jpg" alt="Ref 19">
+                            <h3>Ref 19</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s19.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s20.jpg" alt="Ref 20">
+                            <h3>Ref 20</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s20.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s21.jpg" alt="Ref 21">
+                            <h3>Ref 21</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s21.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s22.jpg" alt="Ref 22">
+                            <h3>Ref 22</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s22.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s23.jpg" alt="Ref 23">
+                            <h3>Ref 23</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s23.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s24.jpg" alt="Ref 24">
+                            <h3>Ref 24</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s24.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s25.jpg" alt="Ref 25">
+                            <h3>Ref 25</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s25.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s26.jpg" alt="Ref 26">
+                            <h3>Ref 26</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s26.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s27.jpg" alt="Ref 27">
+                            <h3>Ref 27</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s27.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s28.jpg" alt="Ref 28">
+                            <h3>Ref 28</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s28.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s29.jpg" alt="Ref 29">
+                            <h3>Ref 29</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s29.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s30.jpg" alt="Ref 30">
+                            <h3>Ref 30</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s30.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s31.jpg" alt="Ref 31">
+                            <h3>Ref 31</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s31.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s32.jpg" alt="Ref 32">
+                            <h3>Ref 32</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s32.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s33.jpg" alt="Ref 33">
+                            <h3>Ref 33</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s33.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s34.jpg" alt="Ref 34">
+                            <h3>Ref 34</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s34.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s35.jpg" alt="Ref 35">
+                            <h3>Ref 35</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s35.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s36.jpg" alt="Ref 36">
+                            <h3>Ref 36</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s36.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s37.jpg" alt="Ref 37">
+                            <h3>Ref 37</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s37.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s38.jpg" alt="Ref 38">
+                            <h3>Ref 38</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s38.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s39.jpg" alt="Ref 39">
+                            <h3>Ref 39</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s39.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+                        <div class="product">
+                            <img src="s40.jpg" alt="Ref 40">
+                            <h3>Ref 40</h3>
+                            <p></p>
+                            <span>$28.000</span>
+                            <a href="https://api.whatsapp.com/send?text=lo%20quiero%20https://raw.githubusercontent.com/mamelucosmedellin/principal/main/s40.jpg&phone=3053576459">Pidelo Aquí</a>
+                        </div>
+
+                      
+    
+                        </div>
+                        
+                        <script src="script.js"></script>   
+     
+       
+    
+          </section>
+   
+    <footer>
+        <p>&copy; 2024 Mamelucos Medellín. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleSubmenu(submenuId) {
+            var submenu = document.getElementById(submenuId);
+            submenu.classList.toggle('active');
+        }
+    </script>
+
+ 
+</body>
+</html>
