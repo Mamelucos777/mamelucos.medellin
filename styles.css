@@ -25,9 +25,8 @@
     }
 
     .home{
-	display: flex
+	display: flex;
 	flex-wrap: wrap;
-
     }
 
     .in-flex {
@@ -36,8 +35,8 @@
     }
     .in-flex:first-child {
 	flex: 2;
-	padding: 15px;
-	margin: 5px;
+	padding: 25px;
+	margin: 20px;
 	margin-bottom: 0px;
     }
     .in-flex div {
