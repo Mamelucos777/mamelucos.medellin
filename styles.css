@@ -1,81 +1,71 @@
-*{
-        padding: 0px;
-        margin: 0px;
-    }
+* {
+    padding: 0;
+    margin: 0;
+}
 
-    #header  {
-        margin: auto;
-        width: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+#header {
+    margin: auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    ul, ol {
-        list-style: none;
-    }
+ul, ol {
+    list-style: none;
+}
 
-    nav li a {
-        background-color:aquamarine
-        color#fff;
-        text-decoration: none;
+nav li a {
+    background-color: aquamarine;
+    color: #fff;
+    text-decoration: none;
+}
 
-    }
+body {
+    background-color: #ededed;
+}
 
-    body {
-	background-color: #ededed;
-    }
+.container {
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+}
 
-    .container {
-        width: 75vw;
-        max-width: 250px;
-        min-width: 520px;
-        margin: auto;
+.product img,
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 
-        .product img {
-            max-width: 100%; /* Hacemos que la imagen ocupe todo el ancho disponible */
-            height: 300px; /* Permitimos que la altura se ajuste automáticamente */
+img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
 
-                 /* Estilos previamente definidos aquí */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-        /* Nuevos estilos para diseño responsive */
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
+.in-flex {
+    flex: 1;
+    min-width: 250px;
+}
 
-          /* Nuevos estilos para hacer las imágenes responsive */
-          .responsive-img {
-            max-width: 50%;
-            height: auto;
-        }
+.in-flex:first-child {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+    margin-bottom: 0;
+}
 
-        }
+.in-flex div {
+    padding: 25px;
+    background-color: #fff;
+    margin: 20px;
+}
 
-    }
-
-    img {
-        width: 100%;
-        border-radius: 15px;
-        box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
-
-    }
-
-    .home{
-	display: flex;
-	flex-wrap: wrap;
-    }
-
-    .in-flex {
-	flex: 1;
-	min-width: 250px;
-    }
-    .in-flex:first-child {
-	flex: 2;
-	padding: 25px;
-	margin: 20px;
-	margin-bottom: 0px;
-    }
-    .in-flex div {
-	padding: 25px;
-	background-color: #fff;
-	margin: 20px;
-    }
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
