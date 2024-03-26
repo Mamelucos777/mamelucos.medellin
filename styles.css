@@ -26,9 +26,30 @@
 
     .container {
         width: 75vw;
-        max-width: auto;
+        max-width: 250px;
         min-width: 520px;
         margin: auto;
+
+        .product img {
+            max-width: 100%; /* Hacemos que la imagen ocupe todo el ancho disponible */
+            height: 300px; /* Permitimos que la altura se ajuste automáticamente */
+
+                 /* Estilos previamente definidos aquí */
+
+        /* Nuevos estilos para diseño responsive */
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+          /* Nuevos estilos para hacer las imágenes responsive */
+          .responsive-img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        }
+
     }
 
     img {
