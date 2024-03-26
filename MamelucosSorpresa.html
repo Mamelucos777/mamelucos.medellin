@@ -10,19 +10,15 @@
 
 .product {
             flex: 0 0 calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
-            max-width: 50%;
             margin: 10px;
             text-align: center;
         }
 
         @media screen and (min-width: 768px) {
             .product {
-                flex: 0 0 calc(50% - 20px); /* dos productos por fila en pantallas medianas y grandes */
-                margin: 10px; /* Añade un margen entre los productos */
-                text-align: center; /* Centra el contenido */
+                flex: 0 0 calc(33.33% - 20px); /* Tres productos por fila en pantallas medianas y grandes */
             }
         }
-
         
         .product-gallery {
             display: flex; /* Cambiamos el comportamiento de la caja a flexbox */
@@ -30,7 +26,7 @@
         }
 
         .product {
-            flex: 0 0 calc(50% - 20px); /* Establecemos el ancho de cada producto (ajustable según tus necesidades) */
+            flex: 0 0 calc(33% - 20px); /* Establecemos el ancho de cada producto (ajustable según tus necesidades) */
             margin: 10px; /* Añadimos un margen entre los productos */
             text-align: center; /* Centramos el contenido */
 
@@ -49,9 +45,8 @@
         
 
         .product img {
-             width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
-    	     height: auto; /* Permite que la altura se ajuste automáticamente */
-             max-width: 100%; /* Establece el ancho máximo de las imágenes */
+            max-width: 100%; /* Hacemos que la imagen ocupe todo el ancho disponible */
+            height: 300px; /* Permitimos que la altura se ajuste automáticamente */
 
                  /* Estilos previamente definidos aquí */
 
@@ -63,12 +58,23 @@
 
           /* Nuevos estilos para hacer las imágenes responsive */
           .responsive-img {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
         }
 
         }
 
+        .zoom {
+            display: none;
+            position: absolute;
+            width: 200px; /* ajusta el tamaño de la lupa según sea necesario */
+            height: 200px; /* ajusta el tamaño de la lupa según sea necesario */
+            border: 2px solid black;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: 999;
+        }
 			
 			#header {
 				margin:auto;
